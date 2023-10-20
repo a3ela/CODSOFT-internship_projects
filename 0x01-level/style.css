@@ -47,4 +47,14 @@ body {
   font-size: 1.7rem;
   color: var(--white);
   margin-left: 4rem;
+  transition: 0.3s;
+}
+.navbar a:hover,
+.navbar .active {
+  color: var(--light-blue);
+}
+#menu-icon {
+  font-size: 3.6rem;
+  color: var(--white);
+  display: none;
 }
