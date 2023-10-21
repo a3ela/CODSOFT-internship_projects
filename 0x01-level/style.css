@@ -22,6 +22,10 @@ body {
   background-color: var(--light-black);
   color: var(--white);
 }
+a {
+  color: var(--white);
+  text-decoration: none;
+}
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
@@ -210,10 +214,11 @@ span {
   position: relative;
   justify-content: space-around;
   gap: 2rem;
+  margin-top: 3rem;
 }
 .contact h2 {
   position: absolute;
-  top: 0;
+  top: 5rem;
 }
 .form fieldset {
   display: flex;
@@ -237,4 +242,16 @@ input[type="submit"] {
   margin: 3rem 0;
   max-width: 13rem;
   border: none;
+}
+.contact .col-2 {
+  font-size: 2.3rem;
+}
+.contact .col-2 li {
+  list-style: none;
+  margin: 1rem 0;
+}
+.contact .col-2 li i {
+  color: var(--light-blue);
+  padding: 2rem;
+  font-size: 3rem;
 }
