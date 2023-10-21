@@ -179,7 +179,7 @@ span {
   padding: 1rem 2.8rem;
   background-color: var(--light-blue);
   border-radius: 4rem;
-  box-shadow: 0 0 2rem var(--light-blue);
+  box-shadow: 0 0 2rem 0.5rem var(--light-blue);
   font-size: 1.6rem;
   color: var(--white);
   letter-spacing: 0.1rem;
@@ -189,16 +189,52 @@ span {
 }
 .btn:hover {
   background: var(--black);
-  border: 1px dashed var(--light-blue);
-  outline: none;
+  /* border: 1px dashed var(--light-blue); */
 }
 
 .resume .resume-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
 }
 .resume-content h5 {
   font-size: 3.2rem;
+}
+.contact h3 {
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.contact h2 {
+  position: absolute;
+  top: 0;
+}
+.form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+.form label {
+  font-size: 1.6rem;
+  margin: 0.5rem 0;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0 0 0;
+  min-height: 2rem;
+  background-color: transparent;
+  border-bottom: 2px solid var(--white);
+  color: var(--white);
+}
+input[type="submit"] {
+  margin: 3rem 0;
+  max-width: 13rem;
+  border: none;
 }
