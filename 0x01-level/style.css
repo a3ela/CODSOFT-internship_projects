@@ -18,7 +18,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playpen Sans", sans-serif;
   background-color: var(--light-black);
   color: var(--white);
 }
@@ -184,8 +184,21 @@ span {
   color: var(--white);
   letter-spacing: 0.1rem;
   font-weight: 600;
-  transition: 0.5s ease;
+  transition: 0.5s;
+  margin: 1rem;
 }
 .btn:hover {
-  box-shadow: none;
+  background: var(--black);
+  border: 1px dashed var(--light-blue);
+  outline: none;
+}
+
+.resume .resume-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.resume-content h5 {
+  font-size: 3.2rem;
 }
