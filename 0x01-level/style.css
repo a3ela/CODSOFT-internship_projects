@@ -26,6 +26,9 @@ a {
   color: var(--white);
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
@@ -125,35 +128,28 @@ span {
   object-fit: cover;
   border-radius: 10% 0.2rem;
 }
+.about-content p {
+  font-size: 1.6rem;
+  margin: 2rem 0 3rem;
+  width: 40vw;
+}
 .heading {
   text-align: center;
   font-size: 4.5rem;
   margin-bottom: 5rem;
 }
-.about-content h2 {
-  text-align: left;
-  line-height: 1.2;
-}
-.about-content h3 {
-  font-size: 2.6rem;
-  margin-bottom: 5rem;
-}
-.about-content p {
-  font-size: 1.6rem;
-  margin: 2rem 0 3rem;
-}
+
 .project h2 {
   margin-bottom: 5rem;
 }
 .project-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 10rem;
 }
 .project-container .project-box {
-  flex: 1 1 30rem;
   background-color: var(--black);
   padding: 3rem 2rem 4rem;
   border-radius: 2rem;
@@ -165,11 +161,8 @@ span {
   color: var(--white);
   max-width: 40rem;
 }
-.project-box::after {
-  content: "";
-  height: 3rem;
-  width: 40rem;
-  background-color: red;
+.project-box:last-child {
+  margin-right: auto;
 }
 .project-box h3 {
   font-size: 2.6rem;
@@ -254,4 +247,71 @@ input[type="submit"] {
   color: var(--light-blue);
   padding: 2rem;
   font-size: 3rem;
+}
+.container {
+  max-width: 73.1rem;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col {
+  width: 30%;
+  padding: 0 15px;
+}
+.footer h4 {
+  font-size: 2.1rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: var(--light-blue);
+  height: 2px;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+.footer-col ul li a {
+  font-size: 1.5rem;
+  font-weight: 300;
+  display: block;
+  transition: 0.3s ease;
+}
+.footer-col ul li a:hover {
+  padding-left: 0.5rem;
+  color: var(--light-blue);
+}
+.footer-social-media {
+  display: flex;
+}
+.footer-social-media a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: 0.2rem solid var(--light-blue);
+  font-size: 2rem;
+  color: var(--light-blue);
+  margin: 0 0.5rem 0.5rem 0;
+  text-align: center;
+  line-height: 2.5rem;
+  border-radius: 50%;
+  color: var(--white);
+  transition: all 0.5s ease;
+}
+.footer-social-media a:hover {
+  background-color: var(--light-blue);
+  color: var(--white);
+  box-shadow: 0 0 1rem var(--light-blue);
 }
