@@ -69,10 +69,18 @@ section {
   color: var(--black);
   display: none;
 }
+.planet {
+  position: absolute;
+  z-index: -1;
+  top: -100px;
+  right: 200px;
+}
 .home {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: url("assets/planet1.png");
+  background-size: cover;
 }
 .home-content h3 {
   font-size: 3.2rem;
@@ -91,6 +99,7 @@ span {
 }
 .home-img img {
   width: 35vw;
+
   animation: float 3s ease-in-out infinite;
 }
 @keyframes float {
