@@ -1,8 +1,7 @@
 :root {
   --white: #f3f3f3;
   --black: #000;
-  --light-green: #4fb500;
-  --white-blue: #04118a;
+  --light-green: #6fce26;
 }
 * {
   margin: 0;
@@ -20,10 +19,10 @@ html {
 body {
   font-family: "Playpen Sans", sans-serif;
 
-  color: var(--light-green);
+  color: var(--black);
 }
 a {
-  color: var(--light-green);
+  color: var(--black);
   text-decoration: none;
 }
 ul {
@@ -48,26 +47,26 @@ section {
 }
 .logo {
   font-size: 2.5rem;
-  color: var(--light-green);
+  color: var(--black);
   font-weight: bolder;
   cursor: pointer;
 }
 .logo span {
-  color: var(--white-blue);
+  color: var(--light-green);
 }
 .navbar a {
   font-size: 1.7rem;
-  color: var(--light-green);
+  color: var(--black);
   margin-left: 4rem;
   transition: 0.3s;
 }
 .navbar a:hover,
 .navbar .active {
-  color: var(--white-blue);
+  color: var(--light-green);
 }
 #menu-icon {
   font-size: 3.6rem;
-  color: var(--light-green);
+  color: var(--black);
   display: none;
 }
 .home {
@@ -83,7 +82,7 @@ section {
   margin-bottom: 2rem;
 }
 span {
-  color: var(--white-blue);
+  color: var(--light-green);
 }
 .home-content h1 {
   font-size: 5.6rem;
@@ -113,17 +112,17 @@ span {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid var(--white-blue);
+  border: 0.2rem solid var(--light-green);
   font-size: 2rem;
-  color: var(--white-blue);
+  color: var(--light-green);
   border-radius: 50%;
   margin: 3rem 1.5rem 3rem 0;
   transition: 0.5s ease;
 }
 .social-media a:hover {
-  background-color: var(--white-blue);
-  color: var(--light-green);
-  box-shadow: 0 0 1rem var(--white-blue);
+  background-color: var(--light-green);
+  color: var(--black);
+  box-shadow: 0 0 1rem var(--light-green);
 }
 
 .row {
@@ -160,7 +159,7 @@ span {
 .project-card {
   background-color: var(--white);
   border-radius: 20px;
-  border: 2px solid var(--white-blue);
+  border: 2px solid var(--light-green);
   box-shadow: 0 0 30px var(--white-black);
 }
 .project-img {
@@ -176,14 +175,14 @@ span {
   padding: 20px 10px;
 }
 .project-details h3 {
-  color: var(--light-green);
+  color: var(--black);
   font-weight: 700;
   font-size: 2.3rem;
   margin: 0.9rem 0 1rem 0;
   text-align: center;
 }
 .project-details p {
-  color: var(--light-green);
+  color: var(--black);
   line-height: 2rem;
   font-weight: 500;
   font-size: 1.4rem;
@@ -196,18 +195,18 @@ span {
 .btn {
   display: inline-block;
   padding: 1rem 2.8rem;
-  background-color: var(--white-blue);
+  background-color: var(--light-green);
   border-radius: 4rem;
-  box-shadow: 0 0 1rem 0.1rem var(--white-blue);
+  box-shadow: 0 0 1rem 0.1rem var(--light-green);
   font-size: 1.6rem;
-  color: var(--light-green);
+  color: var(--white);
   letter-spacing: 0.1rem;
   font-weight: 600;
   transition: 0.5s;
   margin: 1rem;
 }
 .btn:hover {
-  color: var(--light-green);
+  color: var(--black);
   box-shadow: none;
 }
 .skill .container {
@@ -272,8 +271,8 @@ textarea {
   margin: 10px 0 0 0;
   min-height: 2rem;
   background-color: transparent;
-  border-bottom: 2px solid var(--light-green);
-  color: var(--light-green);
+  border-bottom: 2px solid var(--black);
+  color: var(--black);
 }
 input[type="submit"] {
   margin: 3rem 0;
@@ -288,7 +287,7 @@ input[type="submit"] {
   margin: 1rem 0;
 }
 .contact .col-2 li i {
-  color: var(--white-blue);
+  color: var(--light-green);
   padding: 2rem;
   font-size: 3rem;
 }
@@ -309,7 +308,7 @@ input[type="submit"] {
 }
 .footer h4 {
   font-size: 2.1rem;
-  color: var(--light-green);
+  color: var(--black);
   margin-bottom: 2rem;
   font-weight: 700;
   position: relative;
@@ -319,7 +318,7 @@ input[type="submit"] {
   position: absolute;
   left: 0;
   bottom: -10px;
-  background-color: var(--white-blue);
+  background-color: var(--light-green);
   height: 2px;
   width: 50px;
 }
@@ -335,7 +334,7 @@ input[type="submit"] {
 }
 .footer-col ul li a:hover {
   padding-left: 0.5rem;
-  color: var(--white-blue);
+  color: var(--white);
 }
 .footer-social-media {
   display: flex;
@@ -348,23 +347,22 @@ input[type="submit"] {
   width: 4rem;
   height: 4rem;
   background: transparent;
-  border: 0.2rem solid var(--white-blue);
+  border: 0.2rem solid var(--light-green);
   font-size: 2rem;
-  color: var(--white-blue);
+  color: var(--light-green);
   margin: 0 0.5rem 0.5rem 0;
   text-align: center;
   line-height: 2.5rem;
-  color: var(--light-green);
+  color: var(--black);
   transition: all 0.5s ease;
 }
 .footer-social-media a:hover {
-  background-color: var(--white-blue);
-  color: var(--light-green);
-  box-shadow: 0 0 1rem var(--white-blue);
+  background-color: var(--light-green);
+  color: var(--black);
+  box-shadow: 0 0 1rem var(--light-green);
 }
 .copyright {
   text-align: center;
   font-size: 1.5rem;
-  color: var(--black);
   margin: 2rem 0 1rem 0;
 }
