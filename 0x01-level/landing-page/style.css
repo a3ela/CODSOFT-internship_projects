@@ -1,1 +1,94 @@
-font-family: "Bai Jamjuree", sans-serif;
+:root {
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(171, 66%, 44%);
+  --blue: hsl(233, 100%, 69%);
+  --dark-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-bottom: 15px;
+  color: var(--dark-blue);
+}
+h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+h3 {
+  font-size: 23px;
+
+  color: var(--dark-blue);
+}
+p {
+  color: var(--blue);
+  font-size: 18px;
+  line-height: 1.7;
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+  overflow: hidden;
+}
+.header {
+  background: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 130px 160px 75px;
+}
+.header-logo {
+  display: block;
+  margin: auto;
+  margin-bottom: 55px;
+}
+.header p {
+  max-width: 690px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px !important;
+  line-height: 1.5;
+  font-size: 20px;
+}
+.multiple-btn {
+  text-align: center;
+}
+.multiple-btn .btn {
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  padding: 15px 35px;
+  color: var(--white);
+  border-radius: 10em;
+  border-bottom: 4px solid;
+}
+.multiple-btn .btn-1 {
+  background-color: var(--cyan);
+  margin-right: 10px;
+  border-color: hsl(171, 66%, 36%);
+  box-shadow: 0 10px 30px -5px hsla(233, 100px, 65%, 0.5);
+}
+.multiple-btn .btn-2 {
+  background-color: var(--blue);
+  border-color: hsl(233, 100%, 65%);
+  box-shadow: 0 10px 30px -5px hsla(233, 100%, 65%, 0.5);
+}
+.multiple-btn .btn {
+  transition: all 0.2s;
+}
+.multiple-btn .btn:hover {
+  opacity: 0.9;
+}
