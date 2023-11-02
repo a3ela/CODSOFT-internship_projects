@@ -182,3 +182,36 @@ p {
   text-align: center;
   margin-bottom: 50px;
 }
+.footer {
+  padding: 45px 160px;
+  background-color: var(--grayish-blue);
+  display: grid;
+  grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
+}
+.footer img {
+  width: 55px;
+}
+.footer .cols {
+  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(120px, 120px));
+  grid-gap: 20px 70px;
+}
+.footer .cols a:hover {
+  color: var(--cyan);
+}
+.footer .cols a:focus,
+.footer .social-links a:focus {
+  outline: 3px dotted #0005;
+  outline-offset: 5px;
+}
+.footer .social-links {
+  place-self: center flex-end;
+}
+.footer .social-links a {
+  font-size: 27px;
+  color: var(--dark-blue);
+}
+.footer .social-links a:not(:last-child) {
+  margin-right: 20px;
+}
