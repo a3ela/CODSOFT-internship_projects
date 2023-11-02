@@ -35,7 +35,7 @@ h3 {
   color: var(--dark-blue);
 }
 p {
-  color: var(--blue);
+  color: var(--grayish-blue);
   font-size: 18px;
   line-height: 1.7;
 }
@@ -44,6 +44,7 @@ p {
   margin: auto;
   overflow: hidden;
 }
+/* Header */
 .header {
   background: url(./images/bg-header-desktop.png);
   background-repeat: no-repeat;
@@ -91,4 +92,43 @@ p {
 }
 .multiple-btn .btn:hover {
   opacity: 0.9;
+}
+/* About */
+.about {
+  padding: 75px 0;
+}
+.about p {
+  max-width: 690px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.about-content {
+  display: flex;
+}
+.about-content .img-box {
+  width: 50%;
+  overflow: hidden;
+}
+.about-content .img-box img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transform: translateX(-5px);
+}
+.about-content .cards {
+  width: 50%;
+  padding: 70px 110px;
+}
+.about-content .cards .card:not(:last-child) {
+  margin-bottom: 55px;
+}
+.about-content .cards .card h3 {
+  margin-bottom: 10px;
+}
+.about-content .cards .card p {
+  max-width: 450px;
+  font-size: 16px;
+  line-height: 2;
+  text-align: start;
 }
