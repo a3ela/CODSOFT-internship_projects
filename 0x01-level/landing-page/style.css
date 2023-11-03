@@ -184,7 +184,7 @@ p {
 }
 .footer {
   padding: 45px 160px;
-  background-color: var(--grayish-blue);
+  background: var(--grayish-blue);
   display: grid;
   grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
 }
@@ -197,7 +197,8 @@ p {
   grid-template-columns: repeat(3, minmax(120px, 120px));
   grid-gap: 20px 70px;
 }
-.footer .cols a:hover {
+.footer .cols a:hover,
+.footer .social-links a:hover {
   color: var(--cyan);
 }
 .footer .cols a:focus,
@@ -211,7 +212,95 @@ p {
 .footer .social-links a {
   font-size: 27px;
   color: var(--dark-blue);
+  transition: all 0.3s;
 }
 .footer .social-links a:not(:last-child) {
   margin-right: 20px;
+}
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+  .about {
+    padding: 75px 80px;
+  }
+  .about-content {
+    flex-direction: column;
+  }
+  .about-content .img-box {
+    width: 100%;
+  }
+  .about-content .img-box img {
+    width: 80%;
+    margin: auto;
+    transform: translateX(0);
+  }
+  .about-content .cards {
+    width: 100%;
+    padding: 70px 0 0;
+    text-align: center;
+  }
+  .about-content .cards .card p {
+    margin-bottom: auto;
+  }
+  .access img {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .footer .cols {
+    grid-template-columns: repeat(2, minmax(120px, 120px));
+    grid-gap: 20px 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .multiple-btn .btn-1 {
+    margin-right: 0;
+    margin-bottom: 25px;
+  }
+  .footer {
+    grid-template-columns: 1fr;
+    place-items: center;
+    grid-gap: 50px 0;
+  }
+  .footer .cols {
+    max-width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 30px 40px;
+  }
+  .footer .social-links {
+    place-self: center;
+  }
+  .footer .social-links a:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header {
+    background: url(./images/bg-header-mobile.png), no-repeat;
+    background-size: 100%;
+    padding: 130px 30px;
+  }
+  .multiple-btn .btn {
+    width: 100%;
+  }
+  .about-content .img-box img {
+    width: 100%;
+  }
+  .about-content .cards .card p {
+    line-height: 1.5;
+  }
+  .access p {
+    margin-bottom: 60px;
+  }
+  .features .cards {
+    grid-template-columns: 1fr;
+    grid-gap: 60px 30px;
+  }
+  .clients {
+    grid-gap: 60px 100px;
+  }
+  .footer .cols {
+    grid-template-columns: 1fr;
+    place-self: center;
+  }
 }
