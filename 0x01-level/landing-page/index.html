@@ -31,7 +31,7 @@
         </div>
       </header>
       <main>
-        <section class="about">
+        <section class="about show-animate">
           <h2>Keep track of your snippets</h2>
           <p>
             Clipboard instantly stores any item you copy in the cloud, meaning
@@ -43,20 +43,20 @@
               <img src="./images/image-computer.png" alt="computer-image" />
             </div>
             <div class="cards">
-              <div class="card">
+              <div class="card" style="--i: 0">
                 <h3>Quick Search</h3>
                 <p>
                   Easily search your snippets by content, category, web address,
                   application, and more.
                 </p>
               </div>
-              <div class="card">
+              <div class="card" style="--i: 1">
                 <h3>iCloud Sync</h3>
                 <p>
                   Instantly saves and syncs snippets across all your devices.
                 </p>
               </div>
-              <div class="card">
+              <div class="card" style="--i: 2">
                 <h3>Complete History</h3>
                 <p>
                   Retrieve any snippets from the first moment you started using
@@ -82,7 +82,7 @@
               <div class="img-box">
                 <img src="images/icon-blacklist.svg" alt="" />
               </div>
-              <div class="card-content">
+              <div class="card-content" style="--i: 0">
                 <h3>Create blacklists</h3>
                 <p>
                   Ensure sensitive information never makes its way to your
@@ -92,7 +92,7 @@
             </div>
             <div class="card">
               <div class="img-box">
-                <img src="images/icon-text.svg" alt="" />
+                <img src="images/icon-text.svg" alt="" style="--i: 1" />
               </div>
               <div class="card-content">
                 <h3>Plain text snippets</h3>
@@ -104,7 +104,7 @@
             </div>
             <div class="card">
               <div class="img-box">
-                <img src="images/icon-preview.svg" alt="" />
+                <img src="images/icon-preview.svg" alt="" style="--i: 2" />
               </div>
               <div class="card-content">
                 <h3>Sneak preview</h3>
@@ -151,5 +151,6 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
