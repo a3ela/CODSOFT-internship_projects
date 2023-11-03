@@ -4,6 +4,7 @@
   --blue: hsl(233, 100%, 69%);
   --dark-blue: hsl(210, 10%, 33%);
   --grayish-blue: hsl(201, 11%, 66%);
+  --light-grey: hsl(220, 18%, 97%);
 }
 * {
   margin: 0;
@@ -215,7 +216,7 @@ p {
 }
 .footer {
   padding: 45px 160px;
-  background: var(--grayish-blue);
+  background: var(--light-grey);
   display: grid;
   grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
 }
@@ -227,6 +228,11 @@ p {
   display: grid;
   grid-template-columns: repeat(3, minmax(120px, 120px));
   grid-gap: 20px 70px;
+}
+.footer .cols a {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--dark-blue);
 }
 .footer .cols a:hover,
 .footer .social-links a:hover {
