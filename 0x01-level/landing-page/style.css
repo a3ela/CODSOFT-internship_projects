@@ -277,7 +277,7 @@ p {
 @media screen and (max-width: 576px) {
   .header {
     background: url(./images/bg-header-mobile.png), no-repeat;
-    background-size: 100%;
+    background-size: cover;
     padding: 130px 30px;
   }
   .multiple-btn .btn {
