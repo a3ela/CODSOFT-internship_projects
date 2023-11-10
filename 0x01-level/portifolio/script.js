@@ -15,9 +15,6 @@ window.onscroll = () => {
     let id = sec.getAttribute("id");
     if (top >= offset && top < offset + height) {
       navLinks.forEach((link) => {
-        if (link.className === "about") {
-          header.style.color = "red";
-        }
         link.classList.remove("active");
         document
           .querySelector(`header nav a[href='#${id}']`)
